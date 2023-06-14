@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Task Management Application</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+   <div class="container">
+      <h1 class="text-center">Task Management Application</h1>
+      <form id="task-form">
+         <div class="form-group">
+            <input type="text" id="title" class="form-control" placeholder="Title" required>
+         </div>
+         <div class="form-group">
+            <textarea id="description" class="form-control" placeholder="Description"></textarea>
+         </div>
+         <div class="form-group">
+            <input type="date" id="due-date" class="form-control" required>
+         </div>
+         <div class="form-group">
+            <select id="priority" class="form-control">
+               <option value="low">Low</option>
+               <option value="medium">Medium</option>
+               <option value="high">High</option>
+            </select>
+         </div>
+         <div class="form-group">
+            <select id="status" class="form-control">
+               <option value="pending">Pending</option>
+               <option value="in-progress">In Progress</option>
+               <option value="completed">Completed</option>
+            </select>
+         </div>
+         <button type="submit" class="btn btn-primary">Add Task</button>
+      </form>
+      <ul id="task-list" class="list-group"></ul>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+<footer>
+   <p>Author: Sohan Venkatesh</p>
+   <p><a href="mailto:sohanv0908@gmail.com">sohanv0908@gmail.com</a></p>
+</footer>
+
+</html>
